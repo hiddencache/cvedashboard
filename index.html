@@ -159,15 +159,14 @@
                                         </div>
                                         <div class="col-xs-9 text-right">
                                             <div class="huge" id="cve-stat-total">…</div>
-                                            <div>Total CVEs</div>
+                                            <div>Total 0-Days</div>
                                         </div>
                                     </div>
                                 </div>
                                 <a href="#cve-table-panel">
                                     <div class="panel-footer">
-                                        <span class="pull-left">View All CVEs</span>
+                                        <span class="pull-left">View All</span>
                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-
                                         <div class="clearfix"></div>
                                     </div>
                                 </a>
@@ -178,11 +177,11 @@
                                 <div class="panel-heading">
                                     <div class="row">
                                         <div class="col-xs-3">
-                                            <i class="fa fa-info-circle fa-5x"></i>
+                                            <i class="fa fa-check-circle fa-5x"></i>
                                         </div>
                                         <div class="col-xs-9 text-right">
-                                            <div class="huge" id="cve-stat-medium">…</div>
-                                            <div>Medium / Low</div>
+                                            <div class="huge" id="cve-stat-patched">…</div>
+                                            <div>Patched</div>
                                         </div>
                                     </div>
                                 </div>
@@ -190,7 +189,6 @@
                                     <div class="panel-footer">
                                         <span class="pull-left">View Details</span>
                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-
                                         <div class="clearfix"></div>
                                     </div>
                                 </a>
@@ -201,11 +199,11 @@
                                 <div class="panel-heading">
                                     <div class="row">
                                         <div class="col-xs-3">
-                                            <i class="fa fa-warning fa-5x"></i>
+                                            <i class="fa fa-exclamation-triangle fa-5x"></i>
                                         </div>
                                         <div class="col-xs-9 text-right">
-                                            <div class="huge" id="cve-stat-high">…</div>
-                                            <div>High Severity</div>
+                                            <div class="huge" id="cve-stat-unpatched">…</div>
+                                            <div>Unpatched</div>
                                         </div>
                                     </div>
                                 </div>
@@ -213,7 +211,6 @@
                                     <div class="panel-footer">
                                         <span class="pull-left">View Details</span>
                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-
                                         <div class="clearfix"></div>
                                     </div>
                                 </a>
@@ -224,11 +221,11 @@
                                 <div class="panel-heading">
                                     <div class="row">
                                         <div class="col-xs-3">
-                                            <i class="fa fa-exclamation-triangle fa-5x"></i>
+                                            <i class="fa fa-calendar fa-5x"></i>
                                         </div>
                                         <div class="col-xs-9 text-right">
-                                            <div class="huge" id="cve-stat-critical">…</div>
-                                            <div>Critical Severity</div>
+                                            <div class="huge" id="cve-stat-years">…</div>
+                                            <div>Years Tracked</div>
                                         </div>
                                     </div>
                                 </div>
@@ -236,7 +233,6 @@
                                     <div class="panel-footer">
                                         <span class="pull-left">View Details</span>
                                         <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-
                                         <div class="clearfix"></div>
                                     </div>
                                 </a>
@@ -248,7 +244,7 @@
                         <div class="col-lg-8">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <i class="fa fa-line-chart fa-fw"></i> CVEs Published by Year
+                                    <i class="fa fa-line-chart fa-fw"></i> 0-Days Discovered by Year
                                     <div class="pull-right">
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -278,7 +274,7 @@
                             <!-- /.panel -->
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <i class="fa fa-bar-chart-o fa-fw"></i> CVE Affected OS Distribution
+                                    <i class="fa fa-bar-chart-o fa-fw"></i> 0-Days by Vendor
                                     <div class="pull-right">
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -308,9 +304,8 @@
                                                     <thead>
                                                         <tr>
                                                             <th>CVE ID</th>
-                                                            <th>CVSS</th>
-                                                            <th>Severity</th>
-                                                            <th>Affected OS</th>
+                                                            <th>Vendor</th>
+                                                            <th>Type</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -336,7 +331,7 @@
                         <div class="col-lg-4">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <i class="fa fa-pie-chart fa-fw"></i> CVSS Severity Distribution
+                                    <i class="fa fa-pie-chart fa-fw"></i> Vendor OS Distribution
                                 </div>
                                 <div class="panel-body">
                                     <div id="morris-donut-chart"></div>
@@ -347,7 +342,7 @@
                             <!-- /.panel -->
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <i class="fa fa-exchange fa-fw"></i> CVE Attack Vector Distribution
+                                    <i class="fa fa-exchange fa-fw"></i> Vulnerability Type Distribution
                                 </div>
                                 <div class="panel-body">
                                     <div id="morris-os-chart"></div>
@@ -364,8 +359,8 @@
                         <div class="col-lg-12">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <i class="fa fa-table fa-fw"></i> CVE Intelligence Feed
-                                    <small class="text-muted"> — searchable &amp; sortable · click a CVE ID to open NVD</small>
+                                    <i class="fa fa-table fa-fw"></i> 0-Day Intelligence Feed
+                                    <small class="text-muted"> — searchable &amp; sortable · click a CVE ID to open advisory</small>
                                 </div>
                                 <!-- /.panel-heading -->
                                 <div class="panel-body">
@@ -374,10 +369,11 @@
                                             <thead>
                                                 <tr>
                                                     <th>CVE ID</th>
-                                                    <th>CVSS</th>
-                                                    <th>Severity</th>
-                                                    <th>Attack Vector</th>
-                                                    <th>Affected OS</th>
+                                                    <th>Vendor</th>
+                                                    <th>Product</th>
+                                                    <th>Type</th>
+                                                    <th>Date Discovered</th>
+                                                    <th>Date Patched</th>
                                                     <th>Description</th>
                                                 </tr>
                                             </thead>
