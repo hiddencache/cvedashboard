@@ -1,14 +1,11 @@
-# Startmin
+# Sample CVE Dashboard for Threat Intelligence
+The dashboard is made to showcase a real-world project and mimics a real dashboard with an internal database. Though the dashboard is not meant to be the star of the show, its technical documentation is.
 
-**Startmin** is an open source, admin dashboard template for [Bootstrap 3](http://getbootstrap.com/) originally created by [Start Bootstrap](http://startbootstrap.com/).
+BenjiBlue is a fictional company named after the hiddencache's cat.
 
-You can find a demo [here](http://secondtruth.github.io/startmin).
-
-
-## Alternatives
-
-* **[Startfront](https://github.com/secondtruth/startfront)** – Multipurpose, full website template for Bootstrap 5 (includes 10 unique HTML pages)
-
+## Disclaimer
+* The main frame of this dashboard uses an open source dashboard template made by secondtruth. To view credits and licenses, please view here [https://github.com/secondtruth/startmin](https://github.com/secondtruth/startmin).
+* The database used is an open source database from Kaggle, [CVE 2024 Database: Exploits, CVSS, OS](https://www.kaggle.com/datasets/manavkhambhayata/cve-2024-database-exploits-cvss-os)
 
 ## Features
 
@@ -26,55 +23,3 @@ You can find a demo [here](http://secondtruth.github.io/startmin).
 * Left Menu in Top Navbar (optional)
 * Top Navbar is black 🖤
 * Up-to-date dependencies
-
-
-## Getting Started
-
-To use this template, choose one of the following options to get started:
-
-* Download the latest release as ZIP file from GitHub
-* Clone this repository from GitHub
-* Install using [NPM](https://www.npmjs.com/)
-* Install using [Composer](https://getcomposer.org)
-
-### Install via NPM
-
-To install the template using NPM, run the following command and you will get the latest version:
-
-    $ npm i startmin
-
-### Install via Composer
-
-[Install Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) if you don't already have it present on your system.
-
-To install the template using Composer, run the following command and you will get the latest version:
-
-    $ composer require secondtruth/startmin
-
-
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/secondtruth/startmin/issues) here on GitHub.
-
-
-## Contributors
-
-Many thanks to [Ed Preston](https://github.com/epreston) (@epreston)
-  for [helping out](https://github.com/secondtruth/startmin/commits?author=epreston)!
-
-
-## Credits
-
-**Startmin** is based on [Start Bootstrap](http://startbootstrap.com/)'s **[SB Admin 2 (Legacy Version)](http://startbootstrap.com/theme/sb-admin-2/)**. Start Bootstrap was created and is maintained by **[David Miller](https://davidmiller.io/)**.
-
-This template is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-It makes use of the [FontAwesome](http://fontawesome.io/) icons created by [Dave Gandy](https://twitter.com/davegandy).
-
-Many thanks to the snippet contributors at [Bootsnipp](http://bootsnipp.com/).
-
-
-## Copyright and License
-
-Copyright 2013 – 2023 Christian Neff & Start Bootstrap LLC.
-
-Code released under the [MIT](https://github.com/secondtruth/startmin/blob/master/LICENSE) license.
