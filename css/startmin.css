@@ -5,7 +5,7 @@
  */
 
 body {
-    background-color: #f8f8f8;
+    background-color: #cccccc;
 }
 
 #wrapper {
@@ -327,7 +327,7 @@ table.dataTable thead .sorting:after {
 .panel-green .panel-heading {
     border-color: #5cb85c;
     color: #fff;
-    background-color: #5cb85c;
+    background-color: #60fa60;
 }
 
 .panel-green a {
@@ -339,13 +339,13 @@ table.dataTable thead .sorting:after {
 }
 
 .panel-red {
-    border-color: #d9534f;
+    border-color: #EC0000;
 }
 
 .panel-red .panel-heading {
     border-color: #d9534f;
     color: #fff;
-    background-color: #d9534f;
+    background-color: #EC0000;
 }
 
 .panel-red a {
@@ -356,22 +356,40 @@ table.dataTable thead .sorting:after {
     color: #b52b27;
 }
 
-.panel-yellow {
-    border-color: #f0ad4e;
+.panel-blue {
+    border-color: #1a7abf;
 }
 
-.panel-yellow .panel-heading {
-    border-color: #f0ad4e;
+.panel-blue .panel-heading {
+    border-color: #1a7abf;
     color: #fff;
-    background-color: #f0ad4e;
+    background-color: #119cff;
 }
 
-.panel-yellow a {
-    color: #f0ad4e;
+.panel-blue a {
+    color: #1a7abf;
 }
 
-.panel-yellow a:hover {
-    color: #df8a13;
+.panel-blue a:hover {
+    color: #145e93;
+}
+
+.panel-black {
+    border-color: #333333;
+}
+
+.panel-black .panel-heading {
+    border-color: #000000;
+    color: #fff;
+    background-color: #000000;
+}
+
+.panel-black a {
+    color: #000000;
+}
+
+.panel-black a:hover {
+    color: #000000;
 }
 
 /* Hero Widgets */
