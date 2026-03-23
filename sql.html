@@ -160,7 +160,7 @@
                         <div class="col-lg-4">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <i class="fa fa-lightbulb-o fa-fw"></i> Example Queries
+                                    <i class="fa fa-lightbulb-o fa-fw"></i> Most Used Queries
                                     <small class="text-muted"> — click to load</small>
                                 </div>
                                 <div class="panel-body" style="padding: 0;">
@@ -169,22 +169,10 @@
                                             <tr class="example-query" data-query="SELECT * FROM cve_data LIMIT 10">
                                                 <td>All columns, first 10 rows</td>
                                             </tr>
-                                            <tr class="example-query" data-query="SELECT CVE, Vendor, Product, Type FROM cve_data WHERE Vendor = 'Microsoft' ORDER BY CVE DESC">
-                                                <td>Microsoft CVEs</td>
-                                            </tr>
-                                            <tr class="example-query" data-query="SELECT CVE, Vendor, Product, Type FROM cve_data WHERE Vendor = 'Apple' ORDER BY CVE DESC">
-                                                <td>Apple CVEs</td>
-                                            </tr>
-                                            <tr class="example-query" data-query="SELECT CVE, Vendor, Product, Type FROM cve_data WHERE Vendor = 'Google' ORDER BY CVE DESC">
-                                                <td>Google CVEs</td>
-                                            </tr>
-                                            <tr class="example-query" data-query="SELECT CVE, Vendor, Product, Type, [Date Discovered] FROM cve_data WHERE [Date Patched] IS NULL ORDER BY [Date Discovered] DESC">
-                                                <td>Unpatched CVEs</td>
-                                            </tr>
-                                            <tr class="example-query" data-query="SELECT Type, COUNT(*) AS total FROM cve_data GROUP BY Type ORDER BY total DESC">
+                                            <tr class="example-query" data-query="SELECT Type, COUNT(*) AS amount FROM cve_data GROUP BY Type ORDER BY cnt DESC">
                                                 <td>Count by exploit type</td>
                                             </tr>
-                                            <tr class="example-query" data-query="SELECT Vendor, COUNT(*) AS total FROM cve_data GROUP BY Vendor ORDER BY total DESC">
+                                            <tr class="example-query" data-query="SELECT Vendor, COUNT(*) AS amount FROM cve_data GROUP BY Vendor ORDER BY cnt DESC">
                                                 <td>Count by vendor</td>
                                             </tr>
                                             <tr class="example-query" data-query="SELECT CVE, Vendor, Product, Description FROM cve_data WHERE Description LIKE '%remote%'">
