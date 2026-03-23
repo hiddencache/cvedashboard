@@ -1,11 +1,11 @@
 # Sample CVE Dashboard for Threat Intelligence
-The dashboard is made to showcase a real-world project and mimics a real dashboard with an internal database. Though the dashboard is not meant to be the star of the show, its technical documentation is.
-
-BenjiBlue is a fictional company named after the hiddencache's cat.
+The dashboard is mimic and showcase a real world dashboard with an internal database.<br>
+BenjiBlue is a fictional company named after hiddencache's cat.
 
 ## Disclaimer
-* The main frame of this dashboard uses an open source dashboard template made by secondtruth. To view credits and licenses, please view here [https://github.com/secondtruth/startmin](https://github.com/secondtruth/startmin).
-* The database used is an open source database from Kaggle, [CVE 2024 Database: Exploits, CVSS, OS](https://www.kaggle.com/datasets/manavkhambhayata/cve-2024-database-exploits-cvss-os)
+* To protect my previous employer, no propriety information and code was used in the making of this dashboard
+* The source code of this dashboard uses an open source dashboard template made by secondtruth. To view the template, credit, and licenses, please redirect [here](https://github.com/secondtruth/startmin).
+* The data on this website uses open source, public Kaggle database: [CVE 2024 Database: Exploits, CVSS, OS](https://www.kaggle.com/datasets/manavkhambhayata/cve-2024-database-exploits-cvss-os). All data derived from this dataset is public information.
 
 ## Features
 
