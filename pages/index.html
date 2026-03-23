@@ -380,7 +380,7 @@
                             <!-- /.panel -->
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <i class="fa fa-bar-chart-o fa-fw"></i> CVE Attack Vector Distribution
+                                    <i class="fa fa-bar-chart-o fa-fw"></i> CVE Affected OS Distribution
                                     <div class="pull-right">
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -412,6 +412,7 @@
                                                             <th>CVE ID</th>
                                                             <th>CVSS</th>
                                                             <th>Severity</th>
+                                                            <th>Affected OS</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -446,6 +447,16 @@
                                 <!-- /.panel-body -->
                             </div>
                             <!-- /.panel -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <i class="fa fa-exchange fa-fw"></i> CVE Attack Vector Distribution
+                                </div>
+                                <div class="panel-body">
+                                    <div id="morris-os-chart"></div>
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
                         </div>
                         <!-- /.col-lg-4 -->
                     </div>
@@ -468,6 +479,7 @@
                                                     <th>CVSS</th>
                                                     <th>Severity</th>
                                                     <th>Attack Vector</th>
+                                                    <th>Affected OS</th>
                                                     <th>Description</th>
                                                 </tr>
                                             </thead>

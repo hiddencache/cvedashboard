@@ -4,8 +4,9 @@ BenjiBlue is a fictional company named after hiddencache's cat.
 
 ## Disclaimer
 * To protect my previous employer, no propriety information and code was used in the making of this dashboard
-* The source code of this dashboard uses an open source dashboard template made by secondtruth. To view the template, credit, and licenses, please redirect [here](https://github.com/secondtruth/startmin).
-* The data on this website uses open source, public Kaggle database: [CVE 2024 Database: Exploits, CVSS, OS](https://www.kaggle.com/datasets/manavkhambhayata/cve-2024-database-exploits-cvss-os). All data derived from this dataset is public information.
+    * The source code of this dashboard uses an open source dashboard template made by secondtruth. To view the template, credit, and licenses, please redirect [here](https://github.com/secondtruth/startmin).
+    * All data dervied from this dataset is public information by using an open source Kaggle database: [CVE 2024 Database: Exploits, CVSS, OS](https://www.kaggle.com/datasets/manavkhambhayata/cve-2024-database-exploits-cvss-os).
+* The raw dataset is untouched, but the data shown on the website was cleaned up slightly to make it user-friendly. For example, a CVE description will describe an Apple attack, but the `Affected OS` is marked as N/A by the original author, thus falling in the "Other" category. This was fixed by extending the table logic to include searching within the `Description` for matching keywords in respect to the operating system. Cleaning up the dataset would have taken more time than necessary, so minimal effort was utilized in order to focus on critical resources.
 
 ## Features
 
