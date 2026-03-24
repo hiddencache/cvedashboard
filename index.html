@@ -63,14 +63,11 @@
                 <ul class="nav navbar-right navbar-top-links">
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa fa-user fa-fw"></i> hiddencache <b class="caret"></b>
+                            <i class="fa fa-user fa-fw"></i> Timothy T. <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu dropdown-user">
                             <li>
                                 <a href="userprofile.html"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                            </li>
-                            <li>
-                                <a href="settings.html"><i class="fa fa-gear fa-fw"></i> Settings</a>
                             </li>
                             <li class="divider"></li>
                             <li>
@@ -86,16 +83,22 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="index.html" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="index.html" class="active"><i class="fa fa-dashboard fa-fw"></i> Home</a>
+                        </li>
+                        <li>
+                            <a href="data.html" class="active"><i class="fa fa-cloud fa-fw"></i> Database</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="data.html">Total Exploits Found</a>
+                                    <a href="popular-charts.html">Popular Charts</a>
                                 </li>
                                 <li>
-                                    <a href="popular-charts.html">Popular Charts</a>
+                                    <a href="vendor-breakdown.html">Vendor Breakdown</a>
+                                </li>
+                                <li>
+                                    <a href="exploit-type.html">Exploit Types</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -112,7 +115,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1 class="page-header">Dashboard</h1>
+                            <h1 class="page-header">LevelBlue Dashboard</h1>
                         </div>
                         <!-- /.col-lg-12 -->
                     </div>
@@ -184,7 +187,7 @@
                         <div class="col-lg-12">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <i class="fa fa-line-chart fa-fw"></i> 0-Days Discovered by Year
+                                    <i class="fa fa-line-chart fa-fw"></i> Zero Day Exploits Discovered by Year
                                 </div>
                                 <!-- /.panel-heading -->
                                 <div class="panel-body">
@@ -202,8 +205,8 @@
                         <div class="col-lg-12">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <i class="fa fa-table fa-fw"></i> 0-Day Intelligence Feed
-                                    <small class="text-muted"> — searchable &amp; sortable · click a CVE ID to open advisory</small>
+                                    <i class="fa fa-table fa-fw"></i> Exploit Table
+                                    <small class="text-muted"> — Click a CVE ID to open its advisory</small>
                                 </div>
                                 <!-- /.panel-heading -->
                                 <div class="panel-body">
@@ -252,12 +255,16 @@
         <!-- Morris Charts JavaScript -->
         <script src="js/raphael.min.js"></script>
         <script src="js/morris.min.js"></script>
+
         <!-- DataTables JavaScript -->
         <script src="js/dataTables/jquery.dataTables.min.js"></script>
         <script src="js/dataTables/dataTables.bootstrap.min.js"></script>
 
-        <!-- CVE Intelligence Data -->
-        <script src="js/cve-data.js"></script>
+        <!-- Chart.js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <!-- Charts -->
+        <script src="js/charts.js"></script>
 
         <!-- Custom Theme JavaScript -->
         <script src="js/startmin.js"></script>
